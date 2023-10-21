@@ -1,0 +1,113 @@
+@use "sass:map";
+@use "./../abstracts" as *;
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: #fff;
+  box-shadow: 0 0 0 2px #e2e2e2;
+}
+
+.nav-wrapper {
+  height: 90px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  width: 197px;
+  height: 23px;
+}
+
+.nav-links {
+  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 50px 30px;
+  background: lightcoral;
+  min-width: 250px;
+  transform: translatex(250px);
+  transition: transform ease 0.5s;
+
+  @media (min-width: 768px) {
+    background-color: map-get($colors, "pure-white");
+    padding: 0 0px;
+    position: relative;
+    transform: translatex(0);
+  }
+
+  &.active {
+    transform: translatex(0);
+  }
+
+  &_route-home:hover::before,
+  &_route-services:hover::before,
+  &_route-isolation:hover::before,
+  &_route-lab:hover::before {
+    position: absolute;
+    height: 3px;
+    position: absolute;
+    content: "";
+    background-color: #0ab3c5;
+    top: -30px;
+  }
+  &_route-home:hover::before {
+    width: 45px;
+  }
+  &_route-services:hover::before {
+    width: 96px;
+  }
+  &_route-isolation:hover::before {
+    width: 116px;
+  }
+  &_route-lab:hover::before {
+    width: 63px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      @include font("poppins", light);
+      margin-left: 20px;
+      :hover {
+        color: map-get($colors, "primary");
+        text-shadow: 0 0 0.65px #0ab3c5, 0 0 0.65px #0ab3c5;
+      }
+      &:last-child {
+        padding: 5px 20px;
+        background-color: map-get($colors, "primary");
+        border-radius: 5px;
+      }
+      .appointment-btn {
+        color: map-get($colors, "pure-white");
+        :hover {
+          color: map-get($colors, "pure-white");
+        }
+      }
+
+      @media (min-width: 768px) {
+        display: inline-block;
+      }
+    }
+
+    a {
+      color: map-get($colors, "text");
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #nav-toggle {
+    display: none;
+  }
+}
+

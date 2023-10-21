@@ -1,0 +1,19 @@
+// Owl Carousel for home page section
+
+.owl-carousel .nav-btn {
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+}
+
+.owl-carousel .prev-slide {
+  background: url(./../../../../../img/home/our-blog/left.png) no-repeat scroll
+    0 0;
+  left: -33px;
+}
+.owl-carousel .next-slide {
+  background: url(./../../../../../img/home/our-blog/right.png) no-repeat scroll
+    0 0px;
+  right: -33px;
+}

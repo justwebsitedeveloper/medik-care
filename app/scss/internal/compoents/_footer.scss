@@ -1,0 +1,87 @@
+@use "sass:map";
+@use "./../abstracts" as *;
+
+footer {
+  padding-top: 85px;
+  background-color: map-get($colors, 'footer-bg');
+}
+
+.footer {
+  &-cover {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-links {
+    color: #fff;
+    display: flex;
+    grid-gap: 165px;
+
+    &__title {
+      @include font('poppins', semiBold);
+      color: map-get($colors, 'footer-heading');
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 12px;
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      a {
+        color: #fff;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+
+  &-address {
+    color: white;
+    font-size: 12px;
+
+    img {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-contact {
+    &__title {
+      @include font('poppins', 'semiBold');
+      color: map-get($colors, 'footer-heading');
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    &__sm{
+        list-style: none;
+        padding: 0;
+
+        li{
+            display: inline-block;
+        }
+    }
+
+    &__phone{
+        color: #fff;
+        font-size: 12px;
+    }
+  }
+
+  &-copy {
+    text-align: center;
+    text-align: center;
+    margin-top: 85px;
+    padding: 8px 0;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+  }
+}

@@ -1,0 +1,48 @@
+@use "sass:map";
+@use "./../../abstracts" as *;
+
+.clients-section {
+  position: relative;
+  padding: 100px 0;
+
+  & #testimonial-quote {
+    position: absolute;
+    right: 90px;
+    top: 50px;
+  }
+}
+
+.client {
+  &__carousel {
+    &.owl-carousel .nav-btn {
+      top: 130px;
+    }
+  }
+}
+.client-info {
+  &__content {
+    display: flex;
+    div:first-of-type {
+      align-self: center;
+      width: 26%;
+      margin-left: 80px;
+    }
+
+    img {
+      width: 366px !important;
+      height: 312px;
+    }
+    h1 {
+      @include font("poppins", light);
+      font-size: 10px;
+      color: map-get($colors, "primary");
+      padding-bottom: 5px;
+    }
+    h2 {
+      @include font("poppins", semiBold);
+      font-size: 18px;
+      color: map-get($colors, "text");
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@use "sass:map";
+@use './../abstracts' as *;
+
+body {
+  @include font(poppins, light);
+  color: map-get($colors, "text");
+}

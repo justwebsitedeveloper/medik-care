@@ -1,0 +1,30 @@
+@use "sass:map";
+@use "./../abstracts" as *;
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1;
+  margin-bottom: 50px;
+
+  &__content {
+    @include font(poppins, semiBold);
+    font-size: 2rem;
+    margin-bottom: 0;
+
+    span {
+      @include font(poppins, light);
+    }
+  }
+
+  &__button {
+    background-color: #fff;
+    @include font(poppins, semiBold);
+    border-radius: 6px;
+    border: solid 2px map-get($colors, "text");
+    color: map-get($colors, "text");
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

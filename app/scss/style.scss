@@ -1,0 +1,12 @@
+// Importing the external libraries
+@use './external/libraries';
+
+// Base
+@use './internal/base';
+
+
+// Components
+@use './internal/compoents';
+
+// Pages
+@use './internal/pages/home';

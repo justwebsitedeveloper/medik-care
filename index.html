@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./dist/css/style.css" />
+</head>
+
+<body>
+  <header class="nav-header sticky">
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <img class="nav-logo" src="./img/logo.svg" alt="MedikCare Logo" />
+          <button id="nav-toggle">
+            <svg viewBox="0 0 90 75" width="30" height="30" fill="#000" stroke="#000">
+              <line x1="10" y1="7.5" x2="80" y2="7.5" strokeLinecap="round" strokeWidth="15" />
+              <line x1="10" y1="37.5" x2="80" y2="37.5" strokeLinecap="round" strokeWidth="15" />
+              <line x1="10" y1="67.5" x2="80" y2="67.5" strokeLinecap="round" strokeWidth="15" />
+            </svg>
+          </button>
+          <div class="nav-links">
+            <ul>
+              <li><a class="nav-links_route-home" href="#">Home</a></li>
+              <li>
+                <a class="nav-links_route-services" href="#">Our Services</a>
+              </li>
+              <li>
+                <a class="nav-links_route-isolation" href="#">Home Isolation</a>
+              </li>
+              <li><a class="nav-links_route-lab" href="#">Lab Test</a></li>
+              <li>
+                <a class="appointment-btn" href="#">Book Appointment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="slider-section">
+      <div class="slider">
+        <div class="container">
+          <div class="slides">
+            <div class="slideimg">
+              <div class="slide-data">
+                <h1>We There For You</h1>
+                <span>Home Isolation</span>
+                <p>
+                  It is a long established fact that a reader will be
+                  distracted by the readable
+                </p>
+                <a class="banner-btn" href="#">Explore</a>
+              </div>
+            </div>
+            <div class="slideimg">
+              <div class="slide-data">
+                <h1>We There For You</h1>
+                <span>Home Isolation</span>
+                <p>
+                  It is a long established fact that a reader will be
+                  distracted by the readable
+                </p>
+                <a class="banner-btn" href="#">Explore</a>
+              </div>
+            </div>
+            <div class="slideimg">
+              <div class="slide-data">
+                <h1>We There For You</h1>
+                <span>Home Isolation</span>
+                <p>
+                  It is a long established fact that a reader will be
+                  distracted by the readable
+                </p>
+                <a class="banner-btn" href="#">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="dots">
+            <span onclick="currentslide(1)"><span class="number">01</span></span>
+            <span onclick="currentslide(2)"><span class="number">02</span></span>
+            <span onclick="currentslide(3)"><span class="number">03</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee-container">
+      <div class="marquee container">
+        <div class="marquee-head">
+          <h1>Covid Update</h1>
+        </div>
+        <div class="marquee-news">
+          <p>
+            The “KAVASAM” combination of medicines is prescribed by reputed
+            doctors of Allopathy. The “KAVASAM” combination of medicines is
+            prescribed by reputed doctors of Allopathy. The “KAVASAM”
+            combination of medicines is prescribed by reputed doctors of
+            Allopathy. The “KAVASAM” combination of medicines is prescribed by
+            reputed doctors of Allopathy
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-service">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="section-title__content"><span>Our </span>Services</h3>
+          <a href="#" class="section-title__button">View All</a>
+        </div>
+
+        <div class="home-service__cards">
+          <div class="home-service__card">
+            <img src="./img/home/our-service/Online-Consultation@1x.svg" alt="Online Consultation" width="55"
+              height="55" />
+            <h4>Online Consultation</h4>
+            <p>
+              It is a long established fact that a reader will be distracted
+              by the readable
+            </p>
+          </div>
+
+          <div class="home-service__card">
+            <img src="./img/home/our-service/covid-treatments-centre@1x.svg" alt="Covid Treatments
+                        Centre" width="55" height="55" />
+            <h4>Covid Treatments Centre</h4>
+            <p>
+              It is a long established fact that a reader will be distracted
+              by the readable
+            </p>
+          </div>
+
+          <div class="home-service__card">
+            <img src="./img/home/our-service/Home-isolation-treatment@1x.svg" alt="Home Isolation
+                        Treatment" width="55" height="55" />
+            <h4>Home Isolation Treatment</h4>
+            <p>
+              It is a long established fact that a reader will be distracted
+              by the readable
+            </p>
+          </div>
+
+          <div class="home-service__card">
+            <img src="./img/home/our-service/Lab-test@1x.svg" alt="Lab Test" width="55" height="55" />
+            <h4>Lab Test</h4>
+            <p>
+              It is a long established fact that a reader will be distracted
+              by the readable
+            </p>
+          </div>
+        </div>
+      </div>
+      <img class="plus-icon" id="left-large" src="./img/home/our-service/plus1.png" alt="plus symbol">
+      <img class="plus-icon" id="left-small" src="./img/home/our-service/plus2.png" alt="plus symbol">
+      <img class="plus-icon" id="right-large" src="./img/home/our-service/plus1.png" alt="plus symbol">
+      <img class="plus-icon" id="right-small" src="./img/home/our-service/plus2.png" alt="plus symbol">
+    </section>
+
+    <section class="home-iso">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="section-title__content">
+            <span>Home </span>Isolation Packages
+          </h3>
+          <a href="#" class="section-title__button">View All</a>
+        </div>
+
+        <div class="home-iso__cover">
+          <div class="home-iso-card">
+            <div class="home-iso-card__head">
+              <img src="./img/home/home-isolation-treatment/Elite-package@2x.jpg" srcset="
+                    ./img/home/home-isolation-treatment/Elite-package@1x.jpg,
+                    ./img/home/home-isolation-treatment/Elite-package@2x.jpg 2x
+                  " alt="" />
+              <div class="home-iso-card__head-content">
+                <h4 class="home-iso-card__head-title">Elite Package</h4>
+                <div class="home-iso-card__head-stars" n="2"></div>
+              </div>
+            </div>
+            <div class="home-iso-card__body">
+              <div class="home-iso-card__body-title">
+                <div>
+                  <p>Covid Treatment</p>
+                  <h3>Home Isolation Package</h3>
+                </div>
+                <span>(56)</span>
+              </div>
+              <p class="home-iso-card__body-content">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages.
+              </p>
+              <div class="home-iso-card__body-footer">
+                <button class="bttn bttn-primary">Book Package</button>
+                <p>INR 25,000</p>
+              </div>
+            </div>
+          </div>
+          <div class="home-iso-card">
+            <div class="home-iso-card__head">
+              <img src="./img/home/home-isolation-treatment/Economy-package@2x.jpg" srcset="
+                    ./img/home/home-isolation-treatment/Economy-package@1x.jpg,
+                    ./img/home/home-isolation-treatment/Economy-package@2x.jpg 2x
+                  " alt="" />
+              <div class="home-iso-card__head-content">
+                <h4 class="home-iso-card__head-title">Elite Package</h4>
+                <div class="home-iso-card__head-stars" n="2"></div>
+              </div>
+            </div>
+            <div class="home-iso-card__body">
+              <div class="home-iso-card__body-title">
+                <div>
+                  <p>Covid Treatment</p>
+                  <h3>Home Isolation Package</h3>
+                </div>
+                <span>(56)</span>
+              </div>
+              <p class="home-iso-card__body-content">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages.
+              </p>
+              <div class="home-iso-card__body-footer">
+                <button class="bttn bttn-primary">Book Package</button>
+                <p>INR 25,000</p>
+              </div>
+            </div>
+          </div>
+          <div class="home-iso-card">
+            <div class="home-iso-card__head">
+              <img src="./img/home/home-isolation-treatment/Post-covid-recovery@2x.jpg" srcset="
+                    ./img/home/home-isolation-treatment/Post-covid-recovery@1x.jpg,
+                    ./img/home/home-isolation-treatment/Post-covid-recovery@2x.jpg 2x
+                  " alt="" />
+              <div class="home-iso-card__head-content">
+                <h4 class="home-iso-card__head-title">Elite Package</h4>
+                <div class="home-iso-card__head-stars" n="2"></div>
+              </div>
+            </div>
+            <div class="home-iso-card__body">
+              <div class="home-iso-card__body-title">
+                <div>
+                  <p>Covid Treatment</p>
+                  <h3>Home Isolation Package</h3>
+                </div>
+                <span>(56)</span>
+              </div>
+              <p class="home-iso-card__body-content">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages.
+              </p>
+              <div class="home-iso-card__body-footer">
+                <button class="bttn bttn-primary">Book Package</button>
+                <p>INR 25,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-labtest-section">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="section-title__content"><span>Lab </span>Test</h3>
+          <a href="#" class="section-title__button">View All</a>
+        </div>
+
+        <div class="home-labtest">
+          <div class="home-labtest__left">
+            <div class="home-labtest__left-card">
+              <div class="home-labtest__left-card-img">
+                <img src="./img/home/lab-test/Covid-assesment-panel-with-CT@2x.jpg" srcset="
+                      ./img/home/lab-test/Covid-assesment-panel-with-CT@1x.jpg,
+                      ./img/home/lab-test/Covid-assesment-panel-with-CT@2x.jpg 2x
+                    " alt="" />
+              </div>
+              <div class="home-labtest__left-card-content">
+                <div class="home-labtest__left-card-title">
+                  <div>
+                    <p>Laboratory Package</p>
+                    <h3>Covid Assessment Panel with CT</h3>
+                  </div>
+                  <span>(56)</span>
+                </div>
+                <ul class="home-labtest__left-card-features">
+                  <li>Organ by organ evaluation of damage</li>
+                  <li>Assessment of immune status</li>
+                  <li>Risk factors evaluation</li>
+                  <li>Early pick up of post covid</li>
+                  <li>Recovery status of lung</li>
+                </ul>
+                <p class="home-labtest__left-card-price">INR 17,500</p>
+                <button class="bttn bttn-primary">Book Package</button>
+              </div>
+            </div>
+          </div>
+          <div class="home-labtest__right">
+            <div class="home-labtest__right-card">
+              <div class="home-labtest__right-card-img">
+                <img src="./img/home/lab-test/Covid-assesment-panel@2x.jpg" srcset="
+                      ./img/home/lab-test/Covid-assesment-panel@1x.jpg,
+                      ./img/home/lab-test/Covid-assesment-panel@2x.jpg 2x
+                    " alt="" />
+              </div>
+              <div class="home-labtest__right-card-content">
+                <div>
+                  <p>Laboratory Package</p>
+                  <h3>Covid Assessment Panel</h3>
+                </div>
+
+                <button class="bttn bttn-primary">Book Now</button>
+              </div>
+            </div>
+            <div class="home-labtest__right-card">
+              <div class="home-labtest__right-card-img">
+                <img src="./img/home/lab-test/post-covid-assesment@2x.jpg" srcset="
+                      ./img/home/lab-test/post-covid-assesment@1x.jpg,
+                      ./img/home/lab-test/post-covid-assesment@2x.jpg 2x
+                    " alt="" />
+              </div>
+              <div class="home-labtest__right-card-content">
+                <div>
+                  <p>Laboratory Package</p>
+                  <h3>Post Covid Assessment</h3>
+                </div>
+
+                <button class="bttn bttn-primary">Book Now</button>
+              </div>
+            </div>
+            <div class="home-labtest__right-card">
+              <div class="home-labtest__right-card-img">
+                <img src="./img/home/lab-test/covid-antibody-test@2x.jpg" srcset="
+                      ./img/home/lab-test/covid-antibody-test@1x.jpg,
+                      ./img/home/lab-test/covid-antibody-test@2x.jpg 2x
+                    " alt="" />
+              </div>
+              <div class="home-labtest__right-card-content">
+                <div>
+                  <p>Laboratory Package</p>
+                  <h3>CT-CHEST & COVID ANTI-BODY TEST</h3>
+                </div>
+
+                <button class="bttn bttn-primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="covid-update">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="section-title__content"><span>Covid </span>Update</h3>
+        </div>
+
+        <div class="home-covidupdate__carousel owl-carousel owl-theme">
+          <div class="home-covid">
+            <div class="home-covid__content">
+              <img srcset="./img/home/covid-update/COVID update-01@1x.jpg,
+                            ./img/covid-update/COVID update-01@2x.jpg 2x"
+                src="./img/home/covid-update/COVID update-01@1x.jpg" alt="" />
+              <h1>August 04 2020</h1>
+              <hr />
+              <h2>Will COVID third wave affect Children?</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages
+              </p>
+              <a class="section-title__button" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="home-covid">
+            <div class="home-covid__content">
+              <img srcset="./img/home/covid-update/COVID update-02@1x.jpg,
+                            ./img/covid-update/COVID update-02@2x.jpg 2x"
+                src="./img/home/covid-update/COVID update-02@1x.jpg" alt="" />
+              <h1>August 04 2020</h1>
+              <hr />
+              <h2>Will COVID third wave affect Children?</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages
+              </p>
+              <a class="section-title__button" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="home-covid">
+            <div class="home-covid__content">
+              <img srcset="./img/home/covid-update/COVID update-03@1x.jpg,
+                            ./img/covid-update/COVID update-03@2x.jpg 2x"
+                src="./img/home/covid-update/COVID update-03@1x.jpg" alt="" />
+              <h1>August 04 2020</h1>
+              <hr />
+              <h2>Will COVID third wave affect Children?</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages
+              </p>
+              <a class="section-title__button" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="home-covid">
+            <div class="home-covid__content">
+              <img srcset="./img/home/covid-update/COVID update-01@1x.jpg,
+                            ./img/covid-update/COVID update-01@2x.jpg 2x"
+                src="./img/home/covid-update/COVID update-01@1x.jpg" alt="" />
+              <h1>August 04 2020</h1>
+              <hr />
+              <h2>Will COVID third wave affect Children?</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages
+              </p>
+              <a class="section-title__button" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="home-covid">
+            <div class="home-covid__content">
+              <img srcset="./img/home/covid-update/COVID update-02@1x.jpg,
+                            ./img/covid-update/COVID update-02@2x.jpg 2x"
+                src="./img/home/covid-update/COVID update-02@1x.jpg" alt="" />
+              <h1>August 04 2020</h1>
+              <hr />
+              <h2>Will COVID third wave affect Children?</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages
+              </p>
+              <a class="section-title__button" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="home-covid">
+            <div class="home-covid__content">
+              <img srcset="./img/home/covid-update/COVID update-03@1x.jpg,
+                            ./img/covid-update/COVID update-03@2x.jpg 2x"
+                src="./img/home/covid-update/COVID update-03@1x.jpg" alt="" />
+              <h1>August 04 2020</h1>
+              <hr />
+              <h2>Will COVID third wave affect Children?</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages
+              </p>
+              <a class="section-title__button" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-about">
+      <div class="container">
+        <img width="791" height="528" srcset="
+              ./img/home/about-us/About-us@1x.jpg,
+              ./img/home/about-us/About-us@2x.jpg 2x
+            " src="./img/home/about-us/About-us@2x.jpg 2x" alt="" class="home-about_img" />
+        <div class="home-about-info col-5">
+          <h2>About<span> Us</span></h2>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content
+          </p>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The
+            point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here,
+            content here', making it look like readable English. Many desktop
+            publishing packages
+          </p>
+          <a href="/" class="section-title__button">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel-section">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="section-title__content"><span>Panel </span>Members</h3>
+        </div>
+        <div class="panel">
+          <div class="panel__carousel owl-carousel owl-theme">
+            <div class="panel-info">
+              <div class="panel-info__content">
+                <img srcset="./img/home/panel-members/Panel member-01@1x.jpg, 
+                                ./img/home/panel-members/Panel member-01@2x.jpg 2x"
+                  src="./img/home/panel-members/Panel member-01@1x.jpg" alt="" />
+                <h1>Dr. Michael</h1>
+                <h2>Throat Specialist</h2>
+              </div>
+            </div>
+            <div class="panel-info">
+              <div class="panel-info__content">
+                <img srcset="./img/home/panel-members/Panel member-02@1x.jpg, 
+                                ./img/home/panel-members/Panel member-02@2x.jpg 2x"
+                  src="./img/home/panel-members/Panel member-02@1x.jpg" alt="" />
+                <h1>Dr. Meena</h1>
+                <h2>Throat Specialist</h2>
+              </div>
+            </div>
+            <div class="panel-info">
+              <div class="panel-info__content">
+                <img srcset="./img/home/panel-members/Panel member-03@1x.jpg, 
+                                ./img/home/panel-members/Panel member-03@2x.jpg 2x"
+                  src="./img/home/panel-members/Panel member-03@1x.jpg" alt="" />
+                <h1>Dr. Senthil</h1>
+                <h2>Throat Specialist</h2>
+              </div>
+            </div>
+            <div class="panel-info">
+              <div class="panel-info__content">
+                <img srcset="./img/home/panel-members/Panel member-01@1x.jpg, 
+                                ./img/home/panel-members/Panel member-01@2x.jpg 2x"
+                  src="./img/home/panel-members/Panel member-01@1x.jpg" alt="" />
+                <h1>Dr. Michael</h1>
+                <h2>Throat Specialist</h2>
+              </div>
+            </div>
+            <div class="panel-info">
+              <div class="panel-info__content">
+                <img srcset="./img/home/panel-members/Panel member-02@1x.jpg, 
+                                ./img/home/panel-members/Panel member-02@2x.jpg 2x"
+                  src="./img/home/panel-members/Panel member-02@1x.jpg" alt="" />
+                <h1>Dr. Meena</h1>
+                <h2>Throat Specialist</h2>
+              </div>
+            </div>
+            <div class="panel-info">
+              <div class="panel-info__content">
+                <img srcset="./img/home/panel-members/Panel member-03@1x.jpg, 
+                                ./img/home/panel-members/Panel member-03@2x.jpg 2x"
+                  src="./img/home/panel-members/Panel member-03@1x.jpg" alt="" />
+                <h1>Dr. Senthil</h1>
+                <h2>Throat Specialist</h2>
+              </div>
+            </div>
+          </div>
+          <div class="panel-details">
+            <h1>Why Medikcare</h1>
+            <p>
+              It is a long established fact that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters, as opposed to using 'Content
+              here, content here', making it look like readable English. Many
+              desktop publishing packages
+            </p>
+            <a href="#" class="section-title__button">Know More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients-section">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="section-title__content"><span>Our </span>Clients</h3>
+        </div>
+        <div class="client">
+          <div class="client__carousel owl-carousel owl-theme">
+            <div class="client-info">
+              <div class="client-info__content">
+                <img srcset="
+                      ./img/home/testimonials/Suman@1x.png,
+                      ./img/home/testimonials/Suman@2x.png 2x
+                    " src="./img/home/testimonials/Suman@2x.png" alt="" />
+                <div>
+                  <h1>Jun 10,2021</h1>
+                  <h2>Suman Chowri</h2>
+                  <p>
+                    The “KAVASAM” combination of medicines is prescribed by
+                    reputed doctors of Allopathy, Homeopathy and Siddha. All
+                    the medicines that are part of this package are approved
+                    and recommended by the Ministry of Health, India and AYUSH
+                    for the public usage.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="client-info">
+              <div class="client-info__content">
+                <img srcset="
+                      ./img/home/testimonials/Suman@1x.png,
+                      ./img/home/testimonials/Suman@2x.png 2x
+                    " src="./img/home/testimonials/Suman@2x.png" alt="" />
+                <div>
+                  <h1>Jun 10,2021</h1>
+                  <h2>Suman Chowri</h2>
+                  <p>
+                    The “KAVASAM” combination of medicines is prescribed by
+                    reputed doctors of Allopathy, Homeopathy and Siddha. All
+                    the medicines that are part of this package are approved
+                    and recommended by the Ministry of Health, India and AYUSH
+                    for the public usage.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="client-info">
+              <div class="client-info__content">
+                <img srcset="
+                      ./img/home/testimonials/Suman@1x.png,
+                      ./img/home/testimonials/Suman@2x.png 2x
+                    " src="./img/home/testimonials/Suman@2x.png" alt="" />
+                <div>
+                  <h1>Jun 10,2021</h1>
+                  <h2>Suman Chowri</h2>
+                  <p>
+                    The “KAVASAM” combination of medicines is prescribed by
+                    reputed doctors of Allopathy, Homeopathy and Siddha. All
+                    the medicines that are part of this package are approved
+                    and recommended by the Ministry of Health, India and AYUSH
+                    for the public usage.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="client-info">
+              <div class="client-info__content">
+                <img srcset="
+                      ./img/home/testimonials/Suman@1x.png,
+                      ./img/home/testimonials/Suman@2x.png 2x
+                    " src="./img/home/testimonials/Suman@2x.png" alt="" />
+                <div>
+                  <h1>Jun 10,2021</h1>
+                  <h2>Suman Chowri</h2>
+                  <p>
+                    The “KAVASAM” combination of medicines is prescribed by
+                    reputed doctors of Allopathy, Homeopathy and Siddha. All
+                    the medicines that are part of this package are approved
+                    and recommended by the Ministry of Health, India and AYUSH
+                    for the public usage.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="client-info">
+              <div class="client-info__content">
+                <img srcset="
+                      ./img/home/testimonials/Suman@1x.png,
+                      ./img/home/testimonials/Suman@2x.png 2x
+                    " src="./img/home/testimonials/Suman@2x.png" alt="" />
+                <div>
+                  <h1>Jun 10,2021</h1>
+                  <h2>Suman Chowri</h2>
+                  <p>
+                    The “KAVASAM” combination of medicines is prescribed by
+                    reputed doctors of Allopathy, Homeopathy and Siddha. All
+                    the medicines that are part of this package are approved
+                    and recommended by the Ministry of Health, India and AYUSH
+                    for the public usage.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="client-info">
+              <div class="client-info__content">
+                <img srcset="
+                      ./img/home/testimonials/Suman@1x.png,
+                      ./img/home/testimonials/Suman@2x.png 2x
+                    " src="./img/home/testimonials/Suman@2x.png" alt="" />
+                <div>
+                  <h1>Jun 10,2021</h1>
+                  <h2>Suman Chowri</h2>
+                  <p>
+                    The “KAVASAM” combination of medicines is prescribed by
+                    reputed doctors of Allopathy, Homeopathy and Siddha. All
+                    the medicines that are part of this package are approved
+                    and recommended by the Ministry of Health, India and AYUSH
+                    for the public usage.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img id="testimonial-quote" src="./img/home/testimonials/double-quotes.png" alt="">
+    </section>
+
+    <section class="mobile-app">
+      <div class="container">
+        <img width="748" height="497" srcset="
+              ./img/home/mobile-app/Mobileapp@1x.png,
+              ./img/home/mobile-app/Mobileapp@2x.png 2x
+            " src="./img/home/mobile-app/Mobileapp@1x.png 2x" alt="" class="mobile-app_img" />
+        <div class="mobile-app_content">
+          <div class="mobile-app_content-info">
+            <h3>Get<span> the Mobile App</span></h3>
+            <p>
+              It is a long established fact that a reader<br />
+              will be distracted.
+            </p>
+            <div class="mobile-app_content-appStore">
+              <img src="./img/home/mobile-app/Gplay@2x.png 2x" srcset="
+                    ./img/home/mobile-app/Gplay@1x.png,
+                    ./img/home/mobile-app/Gplay@2x.png 2x
+                  " alt="" />
+              <img src="./img/home/mobile-app/istore@2x.png 2x" srcset="
+                    ./img/home/mobile-app/istore@1x.png,
+                    ./img/home/mobile-app/istore@2x.png 2x
+                  " alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-section">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="section-title__content"><span>Our </span>Blogs</h3>
+        </div>
+
+        <div class="home-blogs__carousel owl-carousel owl-theme">
+          <div class="home-blog">
+            <div class="home-blog__content">
+              <img srcset="
+                    ./img/home/our-blog/Our-blog-01@1x.jpg,
+                    ./img/home/our-blog/Our-blog-01@2x.jpg 2x
+                  " src="./img/home/our-blog/Our-blog-01@1x.jpg" alt="" />
+              <div class="home-blog__content-info">
+                <div>
+                  <h1>August 04 2020</h1>
+                  <h2>Will COVID third wave affect Children?</h2>
+                </div>
+                <div>
+                  <img src="./img/home/our-blog/member.png" alt="" />
+                  <h3>(32)</h3>
+                </div>
+              </div>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages
+              </p>
+              <a class="section-title__button" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="home-blog">
+            <div class="home-blog__content">
+              <img srcset="
+                    ./img/home/our-blog/Our-blog-02@1x.jpg,
+                    ./img/home/our-blog/Our-blog-02@2x.jpg 2x
+                  " src="./img/home/our-blog/Our-blog-02@1x.jpg" alt="" />
+              <div class="home-blog__content-info">
+                <div>
+                  <h1>August 04 2020</h1>
+                  <h2>Will COVID third wave affect Children?</h2>
+                </div>
+                <div>
+                  <img src="./img/home/our-blog/member.png" alt="" />
+                  <h3>(32)</h3>
+                </div>
+              </div>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages
+              </p>
+              <a class="section-title__button" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="home-blog">
+            <div class="home-blog__content">
+              <img srcset="
+                    ./img/home/our-blog/Our-blog-03@1x.jpg,
+                    ./img/home/our-blog/Our-blog-03@2x.jpg 2x
+                  " src="./img/home/our-blog/Our-blog-03@1x.jpg" alt="" />
+              <div class="home-blog__content-info">
+                <div>
+                  <h1>August 04 2020</h1>
+                  <h2>Will COVID third wave affect Children?</h2>
+                </div>
+                <div>
+                  <img src="./img/home/our-blog/member.png" alt="" />
+                  <h3>(32)</h3>
+                </div>
+              </div>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages
+              </p>
+              <a class="section-title__button" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="home-blog">
+            <div class="home-blog__content">
+              <img srcset="
+                    ./img/home/our-blog/Our-blog-01@1x.jpg,
+                    ./img/home/our-blog/Our-blog-01@2x.jpg 2x
+                  " src="./img/home/our-blog/Our-blog-01@1x.jpg" alt="" />
+              <div class="home-blog__content-info">
+                <div>
+                  <h1>August 04 2020</h1>
+                  <h2>Will COVID third wave affect Children?</h2>
+                </div>
+                <div>
+                  <img src="./img/home/our-blog/member.png" alt="" />
+                  <h3>(32)</h3>
+                </div>
+              </div>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages
+              </p>
+              <a class="section-title__button" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="home-blog">
+            <div class="home-blog__content">
+              <img srcset="
+                    ./img/home/our-blog/Our-blog-02@1x.jpg,
+                    ./img/home/our-blog/Our-blog-02@2x.jpg 2x
+                  " src="./img/home/our-blog/Our-blog-02@1x.jpg" alt="" />
+              <div class="home-blog__content-info">
+                <div>
+                  <h1>August 04 2020</h1>
+                  <h2>Will COVID third wave affect Children?</h2>
+                </div>
+                <div>
+                  <img src="./img/home/our-blog/member.png" alt="" />
+                  <h3>(32)</h3>
+                </div>
+              </div>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages
+              </p>
+              <a class="section-title__button" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="home-blog">
+            <div class="home-blog__content">
+              <img srcset="
+                    ./img/home/our-blog/Our-blog-03@1x.jpg,
+                    ./img/home/our-blog/Our-blog-03@2x.jpg 2x
+                  " src="./img/home/our-blog/Our-blog-03@1x.jpg" alt="" />
+              <div class="home-blog__content-info">
+                <div>
+                  <h1>August 04 2020</h1>
+                  <h2>Will COVID third wave affect Children?</h2>
+                </div>
+                <div>
+                  <img src="./img/home/our-blog/member.png" alt="" />
+                  <h3>(32)</h3>
+                </div>
+              </div>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page publishing packages
+              </p>
+              <a class="section-title__button" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="medicare-services">
+      <div class="container">
+        <div class="medicare-services_content">
+          <div class="medicare-services_content-info">
+            <img src="./img/home/icons-payments-services/Free-delivery@2x.png 2x" srcset="
+                  ./img/home/icons-payments-services/Free-delivery@1x.png,
+                  ./img/home/icons-payments-services/Free-delivery@2x.png 2x
+                " alt="" />
+            <div class="medicare-services_content-info-details">
+              <h2>All order</h2>
+              <h3>Free Delivery</h3>
+            </div>
+          </div>
+          <div class="medicare-services_content-info">
+            <img src="./img/home/icons-payments-services/Patient-recovery@2x.png 2x" srcset="
+                  ./img/home/icons-payments-services/Patient-recovery@1x.png,
+                  ./img/home/icons-payments-services/Patient-recovery@2x.png 2x
+                " alt="" />
+            <div class="medicare-services_content-info-details">
+              <h2>Recovery</h2>
+              <h3>99% Patient</h3>
+            </div>
+          </div>
+          <div class="medicare-services_content-info">
+            <img src="./img/home/icons-payments-services/Emergency-care@2x.png 2x" srcset="
+                  ./img/home/icons-payments-services/Emergency-care@1x.png,
+                  ./img/home/icons-payments-services/Emergency-care@2x.png 2x
+                " alt="" />
+            <div class="medicare-services_content-info-details">
+              <h2>Emergency care</h2>
+              <h3>24/7 Service</h3>
+            </div>
+          </div>
+          <div class="medicare-services_content-info">
+            <img src="./img/home/icons-payments-services/Secured-payment@2x.png 2x" srcset="
+                  ./img/home/icons-payments-services/Secured-payment@1x.png,
+                  ./img/home/icons-payments-services/Secured-payment@2x.png 2x
+                " alt="" />
+            <div class="medicare-services_content-info-details">
+              <h2>Payment system</h2>
+              <h3>Secured Payment</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-cover">
+        <div class="footer-address">
+          <img src="./img/logo.svg" alt="" width="195" />
+          <address>
+            S1 & S2, 2nd Floor, B Block, Ameen Manors,<br />
+            Nungambakkam High Rd,<br />
+            Nungambakkam, Chennai, Tamil Nadu<br />
+            600034.
+          </address>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <h3 class="footer-links__title">Quick Links</h3>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Covid Update</a></li>
+              <li><a href="#">Our Blogs</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-links__title">Services</h3>
+            <ul>
+              <li><a href="#">Home Isolation Treatment</a></li>
+              <li><a href="#">Lab Test</a></li>
+              <li><a href="#">Online consultation</a></li>
+              <li><a href="#">Covid Treatment Centre</a></li>
+              <li><a href="#">RTPCR test</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <h3 class="footer-contact__title">Reach us</h3>
+          <ul class="footer-contact__sm">
+            <li>
+              <a href="#" role="link"><img src="./img/home/footer-icons/linkedin.svg" alt="Linkedin link"
+                  height="30" /></a>
+            </li>
+            <li>
+              <a href="#" role="link"><img src="./img/home/footer-icons/facebook.svg" alt="Facebook link"
+                  height="30" /></a>
+            </li>
+            <li>
+              <a href="#" role="link"><img src="./img/home/footer-icons/twitter.svg" alt="Twitter link"
+                  height="30" /></a>
+            </li>
+          </ul>
+          <h3 class="footer-contact__title">Call us</h3>
+          <a class="footer-contact__phone" href="tel:+91-82208-12345">+91 82208 12345</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      <p>
+        &copy; Medik Care - All Rights Reserved. Hand Crafted by RV Matrix
+        Software Technologies Pvt Ltd.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./app/js/jquery.min.js"></script>
+  <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="./app/js/script.js"></script>
+</body>
+
+</html>

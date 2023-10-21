@@ -1,0 +1,11 @@
+// Import the necessary Custom variables
+
+@import "./variables";
+
+// Import only the modules needed from bootstrap. All modules are imported here
+@import "./../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// owl Carousel
+
+@import "./../../../node_modules/owl.carousel/src/scss/owl.carousel.scss";
+@import "./../../../node_modules/owl.carousel/src/scss/owl.theme.default.scss";

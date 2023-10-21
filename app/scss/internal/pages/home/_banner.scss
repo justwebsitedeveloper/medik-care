@@ -1,0 +1,122 @@
+@use "sass:map";
+@use "./../../abstracts" as *;
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 643px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.slides {
+  position: absolute;
+  width: 300%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 2s ease;
+}
+
+.slideimg {
+  width: 33.33%;
+  height: 100%;
+  position: relative;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.slideimg:nth-child(1) {
+  background-image: url(../../../../../img/home/banner/banner@1x.jpg);
+}
+
+.slideimg:nth-child(2) {
+  background-image: url(../../../../../img/home/banner/banner@1x.jpg);
+}
+
+.slideimg:nth-child(3) {
+  background-image: url(../../../../../img/home/banner/banner@1x.jpg);
+}
+
+.slide-data {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  // background-color: map-get($colors, "pure-white");
+  padding: 0 5%;
+  margin-top: 45px;
+  span {
+    @include font(poppins, semiBold);
+    font-size: 32px;
+    color: map-get($colors, "text");
+  }
+}
+
+.slide-data h1 {
+  @include font("poppins", light);
+  font-size: 32px;
+  color: map-get($colors, "text");
+}
+
+.slide-data p {
+  @include font("poppins", light);
+  color: map-get($colors, "text");
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  max-width: 330px;
+}
+
+.banner-btn {
+  text-decoration: none;
+  color: map-get($colors, "pure-white");
+  background-color: map-get($colors, "primary");
+  border-radius: 5px;
+  padding: 10px 15px;
+  :hover {
+    color: map-get($colors, "pure-white");
+    text-decoration: none;
+  }
+}
+
+.dots {
+  display: flex;
+  position: absolute;
+  bottom: 6%;
+  width: 100%;
+  text-align: center;
+
+  & > span {
+    transition: 0.4s linear;
+    margin-right: 10px;
+    text-align: left;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: map-get($colors, "gray");
+      border-radius: 15px;
+    }
+
+    &.active {
+      & span.number {
+        visibility: initial;
+        @include font("poppins", semiBold);
+        font-size: 12px;
+      }
+    }
+
+    &.active:after {
+      width: 42px;
+      background-color: map-get($colors, "pure-black");
+    }
+
+    & span.number {
+      visibility: hidden;
+    }
+  }
+}

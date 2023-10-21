@@ -1,0 +1,112 @@
+@use "sass:map";
+@use "./../../abstracts" as *;
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  outline: none;
+}
+
+// .owl-carousel .nav-btn {
+//   height: 47px;
+//   position: absolute;
+//   width: 26px;
+//   cursor: pointer;
+//   top: 220px;
+// }
+
+.owl-carousel .prev-slide {
+  background: url(./../../../../../img/home/our-blog/left.png) no-repeat scroll
+    0 0;
+  left: -33px;
+}
+.owl-carousel .next-slide {
+  background: url(./../../../../../img/home/our-blog/right.png) no-repeat scroll
+    0 0px;
+  right: -33px;
+}
+
+.covid-update {
+  padding: 100px 0;
+  background-color: map-get($colors, grey-section-bg);
+}
+.home-covidupdate {
+  &__carousel {
+    margin-top: 40px;
+
+    &.owl-carousel .nav-btn {
+      top: 220px;
+    }
+  }
+}
+
+.home-covid {
+  width: 315px;
+  height: 475px;
+  position: relative;
+
+  &__content {
+    z-index: 2;
+    width: 260px;
+    background-color: map-get($colors, "pure-white");
+    position: absolute;
+    padding: 0px 0px 35px;
+    //   right: 85px;
+    //   bottom: 35px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    border-radius: 16px;
+    &::after {
+      position: absolute;
+      content: "";
+      height: 0;
+      width: 28px;
+      bottom: 0;
+      right: 30px;
+      border-radius: 6px;
+      background-color: map-get($colors, "primary");
+      transition: height linear 0.15s;
+    }
+
+    &:hover {
+      // background-color: map-get($colors, grey-section-bg);
+      box-shadow: 1px 5px 9px map-get($colors, "card-shadow")!important;
+      &::after {
+        height: 3px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+    h1 {
+      @include font("poppins", light);
+      font-size: 10px;
+      color: map-get($colors, "primary");
+      padding: 16px 0 12px 17px;
+    }
+    h2 {
+      @include font("poppins", semiBold);
+      font-size: 18px;
+      color: map-get($colors, "text");
+      padding: 16px 0 12px 17px;
+    }
+    p {
+      @include font("poppins", light);
+      font-size: 14px;
+      color: map-get($colors, "text");
+      padding: 16px 30px 0 17px;
+      margin-bottom: 30px;
+    }
+    a {
+      margin-left: 17px;
+    }
+    hr {
+      margin: 0rem 0;
+      color: map-get($colors, "break-line");
+      opacity: 1;
+    }
+    hr:not([size]) {
+      height: 1.5px;
+    }
+  }
+}

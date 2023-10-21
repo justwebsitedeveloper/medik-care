@@ -1,0 +1,21 @@
+@use "sass:map";
+@use "./../abstracts" as *;
+
+.bttn {
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px 20px;
+  min-width: 115px;
+
+  &-primary {
+    background-color: map-get($colors, 'primary');
+    color: white;
+    border: solid 2px map-get($colors, 'primary');
+  }
+
+  &-secondary {
+    border: solid 2px map-get($colors, 'text');
+    color: map-get($colors, 'text');
+    border: solid 2px map-get($colors, 'text');
+  }
+}

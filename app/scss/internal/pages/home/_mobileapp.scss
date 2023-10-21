@@ -1,0 +1,46 @@
+@use "sass:map";
+@use "./../../abstracts" as *;
+
+.mobile-app {
+  padding: 165px 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: map-get($colors, "grey-section-bg");
+  &_img {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100%;
+    height: auto;
+  }
+
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &-appStore {
+      display: flex;
+      padding-top: 30px;
+      &:first-of-type img {
+        margin-right: 10px;
+      }
+    }
+    &-info {
+      align-self: center;
+      h3 {
+        @include font("poppins", light);
+        font-size: 32px;
+        padding-bottom: 25px;
+        span {
+          @include font("poppins", semiBold);
+        }
+      }
+      p {
+        @include font("poppins", light);
+        font-size: 14px;
+      }
+    }
+  }
+}

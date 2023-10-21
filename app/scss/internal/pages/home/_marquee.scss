@@ -1,0 +1,73 @@
+@use "sass:map";
+@use "./../../abstracts" as *;
+
+.marquee {
+  // width: 100%;
+  display: flex;
+  align-items: center;
+  // position: relative;
+  height: 50px;
+  // padding: 0;
+  // margin-left: 7.6%;
+
+  &-container {
+    background-color: map-get($colors, "marquee");
+    overflow: hidden;
+  }
+
+  &-news {
+    width: 100%;
+    overflow: hidden;
+    margin-right: -100%;
+
+    & p {
+      @include font(poppins, semiBold);
+      font-size: 14px;
+      white-space: nowrap;
+      animation: kf-marquee 20s linear infinite;
+      color: map-get($colors, "text");
+      transition: color 0.3s linear;
+    }
+  }
+  &-head {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    h1 {
+      @include font(poppins, semiBold);
+      font-size: 12px;
+      color: map-get($colors, "red");
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 1.5px;
+      background-color: map-get($colors, "marquee-line");
+      height: 50px;
+      right: 0px;
+      top: -20px;
+      position: absolute;
+    }
+  }
+
+  &-info {
+    display: flex;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+}
+
+@keyframes kf-marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}

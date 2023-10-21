@@ -1,0 +1,81 @@
+@use "sass:map";
+@use "./../../abstracts" as *;
+
+.home-service {
+  padding: 100px 0;
+  position: relative;
+
+  & .plus-icon {
+    position: absolute;
+    &#left-large {
+      top: 255px;
+      left: 10px;
+    }
+
+    &#left-small {
+      left: 37px;
+      top: 332px;
+    }
+
+    &#right-large {
+      right: 10px;
+      top: 255px;
+    }
+
+    &#right-small {
+      top: 332px;
+      right: 30px;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  &__card {
+    background-color: map-get($colors, "grey-section-bg");
+    overflow: hidden;
+    border-radius: 4px;
+    transition: box-shadow ease 0.5s;
+    position: relative;
+    padding: 32px 24px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 0;
+      width: 28px;
+      bottom: 0;
+      right: 30px;
+      border-radius: 6px;
+      background-color: map-get($colors, "primary");
+      transition: height linear 0.15s;
+    }
+
+    &:hover {
+      box-shadow: 1px 5px 9px map-get($colors, "card-shadow");
+      background-color: map-get($colors, "pure-white");
+
+      &::after {
+        height: 3px;
+      }
+    }
+
+    img {
+      margin-bottom: 24px;
+    }
+
+    h4 {
+      font-size: 18px;
+      @include font(poppins, semiBold);
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 14px;
+      max-width: 235px;
+    }
+  }
+}
